@@ -31,7 +31,7 @@ a:link {
   bottom: 40px;
   left: 40px;
   color: #fff;
-  text-shadow: 0px 0px 3px #ddd;
+  text-shadow: 0px 0px 2px #ddd;
 }
 
 #app-info {
@@ -39,16 +39,16 @@ a:link {
   bottom: 40px;
   right: 40px;
   color: #fff;
-  text-shadow: 0px 0px 3px #ddd;
+  text-shadow: 0px 0px 2px #ddd;
   line-height: 1.5em;
 }
 
 #image-title {
-  font-size: 16px;
+  font-size: 1.5em;
 }
 
 #image-author {
-  font-size: 14px;
+  font-size: 1em;
 }
 
 

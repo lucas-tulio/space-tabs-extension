@@ -16,3 +16,4 @@ get.onload = function() {
   document.getElementById('image-link').href = 'http://astrobin.com/' + imageId;
 }
 get.open('GET', apiUrl, true);
+get.send();
