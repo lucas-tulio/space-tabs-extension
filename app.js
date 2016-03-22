@@ -1,17 +1,11 @@
-// API Settings
-const baseUrl = 'http://www.astrobin.com/api/v1/';
-const apiKey = '';
-const apiSecret = '';
-const auth = '&api_key=' + apiKey + '&api_secret=' + apiSecret + '&format=json';
-const imageOfTheDayQuery = 'imageoftheday/?limit=1&offset=1';
-const query = baseUrl + imageOfTheDayQuery + auth;
-
-console.log(query);
+// API
+const apiUrl = 'http://localhost:5000/image';
 
 // Get!
 var get = new XMLHttpRequest();
 get.onload = function() {
-  console.log(JSON.parse(get.responseText));
+  const image_url = get.response
+  document.getElementsByTagName('html')[0].style.backgroundImage = 'url("' + image_url + '")';
 }
-get.open('GET', query, true);
+get.open('GET', apiUrl, true);
 get.send();
