@@ -16,3 +16,39 @@ body {
   padding: 0;
 }
 
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#image-info {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fff;
+  text-shadow: 0px 0px 3px #ddd;
+}
+
+#app-info {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  text-shadow: 0px 0px 3px #ddd;
+  line-height: 1.5em;
+}
+
+#image-title {
+  font-size: 16px;
+}
+
+#image-author {
+  font-size: 14px;
+}
+
+
