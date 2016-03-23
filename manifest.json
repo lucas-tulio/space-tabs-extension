@@ -3,7 +3,11 @@
   "name": "Space Tabs",
   "version": "1.0",
   
-  "description": "Space images in New Tab. Powered by Astrobin.com",
+  "description": "Space images in the New Tab",
+
+  "icons": {
+    "128": "icon.png"
+  },
   
   "chrome_url_overrides": {
     "newtab": "index.html"
