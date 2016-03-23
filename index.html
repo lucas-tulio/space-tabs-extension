@@ -3,15 +3,18 @@
 <head>
   <title>New Tab</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="app.js"></script>
 </head>
 <body>
+
   <div id="image-info">
-    <a id="image-link">
-      <p id="image-title"></p>
-      <p id="image-author">Loading image...</p>
-    </a>
+    <button id="image-title"></button>
+    <br/>
+    <button id="image-author">Loading image...</button>
   </div>
-  <p id="app-info">Created by <a href="https://github.com/lucasdnd/space-tabs-extension">Lucas Tulio</a><br/>Powered by <a href="http://astrobin.com">Astrobin.com</a></p>
+
+  <p id="app-info">Created by <button id='tulio-link' data-href='https://github.com/lucasdnd/space-tabs-extension'>Lucas Tulio</button><br/>
+  Powered by <button id='astrobin-link' data-href="http://www.astrobin.com">Astrobin.com</button></p>
+
+  <script src="app.js"></script>
 </body>
 </html>

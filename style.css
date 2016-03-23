@@ -16,14 +16,16 @@ body {
   padding: 0;
 }
 
-a:visited {
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
   color: #fff;
   text-decoration: none;
-}
-
-a:link {
-  color: #fff;
-  text-decoration: none;
+  text-align: left;
+  text-shadow: 1px 1px 2px #000;
 }
 
 #image-info {
@@ -31,7 +33,8 @@ a:link {
   bottom: 40px;
   left: 40px;
   color: #fff;
-  text-shadow: 0px 0px 2px #ddd;
+  text-shadow: 1px 1px 2px #000;
+  line-height: 2em;
 }
 
 #app-info {
@@ -39,16 +42,16 @@ a:link {
   bottom: 40px;
   right: 40px;
   color: #fff;
-  text-shadow: 0px 0px 2px #ddd;
+  text-shadow: 1px 1px 2px #000;
   line-height: 1.5em;
 }
 
 #image-title {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 #image-author {
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 
