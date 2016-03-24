@@ -26,8 +26,17 @@ const apiUrl = 'http://autopresentr.co:8001/image';
 // Get!
 var get = new XMLHttpRequest();
 get.onload = function() {
-  const result = JSON.parse(get.response);
-  
+
+  // Parse the result
+  const imageAuthorElement = document.getElementById('image-author');
+  let result = null;
+  try {
+    result = JSON.parse(get.response);
+  } catch (e) {
+    imageAuthorElement.innerHTML = 'Error fetching image';
+    return;
+  }
+
   // Apply the data on the screen
   const imageUrl = result.url_hd;
   const author = result.user;
@@ -39,8 +48,6 @@ get.onload = function() {
   const imageTitleElement = document.getElementById('image-title');
   imageTitleElement.innerHTML = title;
   imageTitleElement.dataset.href = 'http://www.astrobin.com/' + imageId + '/';
-
-  const imageAuthorElement = document.getElementById('image-author');
   imageAuthorElement.innerHTML = 'Image by ' + author;
   imageAuthorElement.dataset.href = 'http://www.astrobin.com/users/' + author + '/';
 }
