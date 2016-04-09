@@ -21,7 +21,7 @@ for (var i = 0; i < buttons.length; i++) {
 }
 
 // API
-const apiUrl = 'http://autopresentr.co:8001/image';
+const apiUrl = 'http://104.236.77.115:8001/image';
 
 // Get!
 var get = new XMLHttpRequest();
